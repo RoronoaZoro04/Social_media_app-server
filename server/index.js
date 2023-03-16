@@ -19,6 +19,7 @@ import Post from './models/Post.js';
 import { users, posts} from './data/index.js';
 
 
+
 /*Configurations*/
  const __filename = fileURLToPath(import.meta.url)
  const __dirname = path.dirname(__filename)
@@ -57,7 +58,7 @@ app.use('/users', userRoutes);
 app.use('/posts', postRoutes);
 
 /*Mongoose*/
-const PORT = process.env.PORT || 6001;
+const PORT = process.env.PORT || 3001;
 mongoose
   .connect(process.env.MONGO_URL, {
         useNewUrlParser:true,
